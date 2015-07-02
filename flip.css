@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	border: 0;
+
+
+}
+
+
+body {
+	background-color: #333;
+	padding: 0 350px 0 350px;
+	text-align: center; /* centering hack for IE5.x/Win */
+	}
+
+
+ /* http://www.positioniseverything.net/articles/jello-expo.html */
+
+
+#bodydiv {
+	padding: 0 350px 0 350px;
+	text-align: center; /* centering hack for IE5.x/Win */
+	}
+#sizer {
+	width: 50%;
+	margin: 0 auto 0 auto; /* standard centering method */
+	text-align: left; /* resets centering hack to default */
+	}
+#expander {
+	margin: 0 -350px 0 -350px;
+	position: relative;
+	text-align: left;
+	}
+
+
+
+
+
+ul {
+    list-style-type: none;
+		margin: 0;
+		padding: 0;
+		border: 0;
+ }
+
+header {
+	border: #000 solid 1px;
+	background: #F1F1D4;
+	padding: 20px 70px 70px 70px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 10px 10px 0 10px;
+}
+
+.nav, li {
+	display: inline;
+
+
+}
+
+
+.content {
+	display: inline-block;
+	float: left;
+	width: 33%;
+	height: 100%;
+	border: #000 solid 1px;
+	background-color: #F1F1D4;
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: 10px;
+	border-radius: 10px;
+	padding-bottom: 300px;
+}
+
+
+ #page_footer {
+
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -5em;
+	border: #000 solid 1px;
+	background-color: #F1F1D4;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+
+.flip {
+    position: relative;
+    width: 320;
+    height: 192;
+    overflow: hidden;
+	float: left;
+    margin: 10px;
+}
+.flip figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+.flip figure img {
+    display:block;
+    position:relative;
+    z-index:10;
+    margin: 10px;
+}
+.flip figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+.flip figure h2 {
+    font-family:'Lato';
+    color:#fff;
+    font-size:20px;
+    text-align:left
+}
+.flip figure p {
+    display:block;
+    font-family:'Lato';
+    font-size:12px;
+    line-height:18px;
+    margin:0;
+    color:#fff;
+    text-align:left
+}
+.flip figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:10px 10px;
+    background-color:rgba(26,76,110,0.5);
+    text-align:center;
+
+
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.flip figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.flip figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.flip figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
